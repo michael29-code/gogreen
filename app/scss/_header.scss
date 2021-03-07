@@ -1,0 +1,122 @@
+.header{
+    top: 0;
+    position: sticky;
+    // hamburger open styles
+    &.open{
+
+        // .overlay{
+        //     display: block;
+        // }
+        .header__toggle{
+            > span:first-child{
+                transform: rotate(45deg);
+            }
+            > span:nth-child(2){
+                opacity: 0;
+            }
+            > span:last-child{
+                transform: rotate(-45deg);
+            }
+        }
+    }
+    .overlay{
+        // display: none;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        right:0px;
+        bottom: 0px;
+        left: 0px;
+        background: rgb(2,0,36);
+        background: linear-gradient(329deg, rgba(2,0,36,1) 0%, rgba(241,241,232,0.6127320954907162) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);  
+    }
+    nav{
+        padding-top: 1.625rem;
+        padding-bottom:1.625rem;
+        background-color: $putih;
+    }
+    &__toggle{ // mobile menu
+        z-index: 1;
+        >span{
+            display: block;
+            width:30px;
+            height: 2px;
+            background-color:$hijau-muda;
+            transition:all 300ms ease-in-out ;
+            
+            &:nth-child(2){
+                width: 21px;
+            }
+            &:nth-child(3){
+                width: 11px;
+            }
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+        
+    }
+
+    &__blank{
+        >span{
+            display: block;
+            width:30px;
+            height: 2px;
+        }
+    }
+    // &__logo{
+    //     // img{
+
+    //     // }
+    // }
+    &__logo2{
+        margin-left: 115px;
+        img{
+            width:180px;
+            height:100;
+        }
+    }
+    &__menu{
+        background-color: $putih-krem;
+        padding: 1.625rem;
+        height: 100%;
+        width: 60%;
+        transform: translateY(-100px);
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: fixed;
+        a{
+            display: block;
+            padding: 0.625rem;
+            color: $hitam;
+        }
+        .social-media{
+            margin-top: 30px;
+            width: 110px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    &__links{
+        margin-right: 115px;
+        a{
+            font-size: $font-sm;
+            color: $hitam;
+            margin-left:32px;
+            transition: color 250ms ease-in-out;
+        }
+
+        :hover{
+            color: $hijau-muda;
+        }
+        .active{
+            color: $hijau-muda;
+        }
+        
+    }
+    
+}
+

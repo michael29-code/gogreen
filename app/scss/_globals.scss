@@ -1,0 +1,60 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Sora', sans-serif ;
+    font-size: $font-med;
+    color: $hitam;
+    // line-height: ;
+    &.noscroll{
+        overflow: hidden;
+    }
+}
+a, a:visited, a:hover{
+    text-decoration: none;
+}
+
+// spacing
+.container{
+    padding-left:1.5rem;
+    padding-right: 1.5rem;
+}
+//flexbox
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+    &-jc-sa{
+        justify-content:space-around;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+    &-ai-c{
+        align-items: center;
+    }
+}
+
+// visibility
+.hide-for-mobile{
+    // hide for tablet and mobile
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+.hide-for-desktop{
+    // hide for desktop viewport widths
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
