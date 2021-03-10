@@ -70,7 +70,7 @@
     //     // }
     // }
     &__logo2{
-        margin-left: 115px;
+       
         img{
             width:180px;
             height:100;
@@ -81,7 +81,6 @@
         padding: 1.625rem;
         height: 100%;
         width: 60%;
-        top: 0px;
         transform: translateY(-100px);
         display: flex;
         flex-direction:column;
@@ -98,11 +97,14 @@
             margin-top: 30px;
             width: 110px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            img{
+                width: 2rem;
+            }
         }
     }
     &__links{
-        margin-right: 115px;
+       
         a{
             font-size: $font-sm;
             color: $hitam;

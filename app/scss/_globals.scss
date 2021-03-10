@@ -24,12 +24,32 @@ a, a:visited, a:hover{
 
 // spacing
 .container{
-    padding-left:1.5rem;
+    padding-top: 2.25rem;
     padding-right: 1.5rem;
+    padding-bottom: 2.25rem;
+    padding-left:1.5rem;
+    @include breakpoint-up(large){
+       padding-left: 100px;
+       padding-right: 100px;
+    } 
 }
 //flexbox
 .flex{
     display: flex;
+
+    
+    &-fd-c{
+        flex-direction: column;
+    }
+    &-fd-cr{
+        flex-direction: column-reverse;
+    }
+    &-fd-r{
+        flex-direction: row;
+    }
+    &-fd-rr{
+        flex-direction: row-reverse;
+    }
 
     &-jc-sb{
         justify-content: space-between;
