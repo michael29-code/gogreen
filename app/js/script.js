@@ -3,6 +3,8 @@ const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems =document.querySelectorAll('.has-fade');
+const backward = document.querySelector('svg');
+
 
 btnHamburger.addEventListener('click',function(){
     console.log('open hamburger');
@@ -33,3 +35,17 @@ overlay.addEventListener('click',function(){
             element.classList.add('fade-out');
     });
 });
+
+
+// animation
+var animation = bodymovin.loadAnimation({
+    container: document.querySelector('.hero__image'),
+        
+    // Set your ID to something that you'll associate with the animation you're using //
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'asset/hero.json'
+        
+    // Make sure your path has the same filename as your animated     SVG's JSON file //
+ });
