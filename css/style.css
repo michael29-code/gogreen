@@ -284,11 +284,9 @@ a, a:visited, a:hover {
 
 .header__menu {
   background-color: #F1F1E8;
-  padding: 1.625rem;
+  top: 0px;
   height: 100%;
   width: 60%;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,6 +302,8 @@ a, a:visited, a:hover {
           justify-content: center;
   text-align: center;
   position: fixed;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .header__menu a {

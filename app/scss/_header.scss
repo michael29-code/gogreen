@@ -79,8 +79,7 @@
     }
     &__menu{
         background-color: $putih-krem;
-        top: 0;
-        padding: 1.625rem;
+        top: 0px;
         height: 100%;
         width: 60%;
         display: flex;
@@ -89,6 +88,7 @@
         justify-content: center;
         text-align: center;
         position: fixed;
+        transform: none;
         a{
             display: block;
             padding: 0.625rem;
