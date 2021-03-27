@@ -79,10 +79,10 @@
     }
     &__menu{
         background-color: $putih-krem;
+        top: 0;
         padding: 1.625rem;
         height: 100%;
         width: 60%;
-        transform: translateY(-100px);
         display: flex;
         flex-direction:column;
         align-items: center;
