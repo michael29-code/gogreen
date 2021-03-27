@@ -3,9 +3,10 @@ html{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+// scroll
 html {
     --scrollbarBG: white;
-    --thumbBG: white;
+    --thumbBG: #e2ded8;
   }
   body::-webkit-scrollbar {
     width: 8px;
@@ -33,6 +34,7 @@ body{
     font-family:'Sora', sans-serif ;
     font-size: $font-med;
     color: $hitam;
+    background-color: $putih;
     // line-height: ;
     &.noscroll{
         overflow: hidden;
