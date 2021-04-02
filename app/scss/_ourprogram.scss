@@ -1,0 +1,42 @@
+.ourprogram{
+    padding-top: 0;
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+    row-gap: 20px;
+    &__content{
+        img{
+            max-width:60%;
+        }
+        .gambar1{
+            width: 50%;
+        }
+        p{
+            font-size: 3vw;
+        }
+    }
+    
+    @include breakpoint-up(large){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5vh;
+        &__content{
+            img{
+                max-width: 90%;
+            }
+            p{
+                padding-top: 10px;
+                font-size: 1.5vw;
+            }
+            .gambar1{
+                width: 50%;
+                transform: translateY(-35px);
+            }
+            .teks1{
+                padding-top: 0;
+                margin-top: 0;
+            }
+        }
+    }
+    
+}

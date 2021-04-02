@@ -1,6 +1,7 @@
 .section2{
     @include breakpoint-up(large){
         flex-direction: row;
+        padding-top: 6vh;
     }
     padding-top: 0;
     align-items: center;
