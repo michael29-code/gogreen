@@ -429,7 +429,7 @@ a, a:visited, a:hover {
 }
 
 .section__title h2 {
-  font-weight: 400;
+  font-weight: bold;
 }
 
 @media (min-width: 64em) {
@@ -634,23 +634,20 @@ a, a:visited, a:hover {
         grid-template-rows: 1fr 1fr;
     -webkit-column-gap: 5px;
             column-gap: 5px;
-    row-gap: 5vh;
+    row-gap: 5vw;
   }
   .ourprogram__content img {
-    max-width: 90%;
+    max-width: 75%;
   }
   .ourprogram__content p {
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 1.5vw;
   }
   .ourprogram__content .gambar1 {
     width: 50%;
-    -webkit-transform: translateY(-35px);
-            transform: translateY(-35px);
   }
-  .ourprogram__content .teks1 {
-    padding-top: 0;
-    margin-top: 0;
+  .ourprogram__content .gambar2 {
+    margin-top: 6vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
