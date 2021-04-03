@@ -26,6 +26,9 @@
             width: 85%;
             text-align: center;
             margin-left: 0;
+            h2{
+                font-weight: 400;
+            }
             @include breakpoint-up(large){
                 transform:translateY(0);
                 min-width: 52%;
@@ -37,8 +40,11 @@
                 text-align: left ;
                 justify-content: space-evenly;
                 width: 100%;
+                img{
+                    width:auto;
+                }
                 p{
-                    width: 65%;
+                    width: 50%;
                     text-align: left;
                     font-size: 3.5vw;
                     @include breakpoint-up(large){
@@ -51,9 +57,9 @@
                 background-color: $hijau-muda;
                 padding: 25px;
                 img{
-                    min-width: 5vw;
+                    min-width: 8vw;
                     @include breakpoint-up(large){
-                        min-width: 1.5vw;
+                        min-width: 3.5vw;
                     }
                 }
             }
