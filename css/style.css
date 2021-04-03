@@ -650,4 +650,190 @@ a, a:visited, a:hover {
     margin-top: 6vw;
   }
 }
+
+.contactus {
+  width: 100%;
+  padding-top: 20vw;
+}
+
+@media (min-width: 64em) {
+  .contactus {
+    width: 100%;
+    padding-top: 10vw;
+    padding-left: 100px;
+    padding-right: 100px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contactus .empty {
+  min-width: 5%;
+}
+
+.contactus__form {
+  background-color: #F1F1E8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 64em) {
+  .contactus__form {
+    width: 95%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    min-height: 38vw;
+  }
+}
+
+.contactus__form .contactus__info {
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #BFDCAE;
+  width: 85%;
+  text-align: center;
+  margin-left: 0;
+}
+
+@media (min-width: 64em) {
+  .contactus__form .contactus__info {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    min-width: 52%;
+    margin-left: -90px;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    min-height: 30vw;
+  }
+}
+
+.contactus__form .contactus__info .alamat, .contactus__form .contactus__info .notelp, .contactus__form .contactus__info .email {
+  text-align: left;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.contactus__form .contactus__info .alamat p, .contactus__form .contactus__info .notelp p, .contactus__form .contactus__info .email p {
+  width: 65%;
+  text-align: left;
+  font-size: 3.5vw;
+}
+
+@media (min-width: 64em) {
+  .contactus__form .contactus__info .alamat p, .contactus__form .contactus__info .notelp p, .contactus__form .contactus__info .email p {
+    font-size: 1.5vw;
+  }
+}
+
+.contactus__form .contactus__info .social-media {
+  width: 100%;
+  background-color: #BFDCAE;
+  padding: 25px;
+}
+
+.contactus__form .contactus__info .social-media img {
+  min-width: 5vw;
+}
+
+@media (min-width: 64em) {
+  .contactus__form .contactus__info .social-media img {
+    min-width: 1.5vw;
+  }
+}
+
+.contactus__form .right {
+  margin-top: -90px;
+}
+
+@media (min-width: 64em) {
+  .contactus__form .right {
+    margin-top: 0;
+    min-width: 60%;
+  }
+}
+
+.contactus__form .right h2 {
+  padding-top: 20px;
+  text-align: left;
+  font-weight: 400;
+  font-size: 6.5vw;
+  line-height: 10px;
+}
+
+@media (min-width: 64em) {
+  .contactus__form .right h2 {
+    font-size: 3.5vw;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+.contactus__form .right p {
+  font-size: 3.5vw;
+  font-weight: 300;
+}
+
+@media (min-width: 64em) {
+  .contactus__form .right p {
+    font-size: 1.5vw;
+  }
+}
+
+.contactus__form .input-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  border: none;
+  margin-top: 5vw;
+}
+
+@media (min-width: 64em) {
+  .contactus__form .input-data {
+    margin-top: 1vw;
+  }
+}
+
+.contactus__form .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+  background-color: transparent;
+  outline: none;
+}
+
+.contactus__form .input-data input:focus ~ label,
+.contactus__form .input-data input:valid ~ label {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 15px;
+  color: black;
+}
+
+.contactus__form .input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: black;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: 15px;
+}
 /*# sourceMappingURL=style.css.map */

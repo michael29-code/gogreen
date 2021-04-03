@@ -1,0 +1,130 @@
+.contactus{
+    width: 100%;
+    padding-top: 20vw;
+    @include breakpoint-up(large){
+        width:100%;
+        padding-top: 10vw;
+        padding-left: 100px;
+        padding-right: 100px;
+        flex-direction: row;
+    }
+    .empty{
+        min-width:5%;
+        // background-color: lightblue;
+    }
+    &__form{
+        @include breakpoint-up(large){
+            width: 95%; 
+            flex-direction: row;
+            min-height: 38vw;
+        }
+        .contactus__info{
+            transform: translateY(-90px);
+            justify-content: center;
+            align-items: center;
+            background-color: $hijau-muda;
+            width: 85%;
+            text-align: center;
+            margin-left: 0;
+            @include breakpoint-up(large){
+                transform:translateY(0);
+                min-width: 52%;
+                margin-left: -90px;
+                transform:translateX(-50px);
+                min-height: 30vw;
+            }
+            .alamat,.notelp,.email{
+                text-align: left ;
+                justify-content: space-evenly;
+                width: 100%;
+                p{
+                    width: 65%;
+                    text-align: left;
+                    font-size: 3.5vw;
+                    @include breakpoint-up(large){
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+            .social-media{
+                width: 100%;
+                background-color: $hijau-muda;
+                padding: 25px;
+                img{
+                    min-width: 5vw;
+                    @include breakpoint-up(large){
+                        min-width: 1.5vw;
+                    }
+                }
+            }
+        }
+        
+        background-color: $putih-krem;
+        justify-content: center;
+        align-items: center;
+        .right{
+            margin-top: -90px;
+            @include breakpoint-up(large){
+                margin-top: 0;
+                // padding: 50px;
+                min-width: 60%;
+            }
+            h2{
+                padding-top: 20px;
+                text-align: left;
+                font-weight: 400;
+                font-size: 6.5vw;
+                line-height: 10px;
+                @include breakpoint-up(large){
+                   font-size: 3.5vw;
+                   padding-top: 0;
+                   margin-top: 0;
+                }
+            }
+            p{
+                font-size: 3.5vw;
+                font-weight: 300;
+                @include breakpoint-up(large){
+                    font-size: 1.5vw;
+                }
+            }
+        }
+        
+        
+        .input-data{
+            height: 40px;
+            width: 100%;
+            position: relative;
+            border: none;
+            margin-top: 5vw;
+            @include breakpoint-up(large){
+                margin-top: 1vw;
+            }
+        }
+        .input-data input{
+            height: 100%;
+            width: 100%;
+            border: none;
+            font-size: 17px;
+            border-bottom: 2px solid silver;
+            background-color: transparent;
+            outline: none;            
+        }
+        .input-data input:focus ~ label,
+        .input-data input:valid ~ label{
+            transform: translateY(-20px);
+            font-size: 15px;
+            color: black;
+        }
+        .input-data label{
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            color: black;
+            transition: all 0.3s ease-in;
+            font-size: 15px;
+        }
+
+    }
+   
+}
