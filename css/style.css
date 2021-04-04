@@ -506,7 +506,7 @@ a, a:visited, a:hover {
 }
 
 .section1__text .text img {
-  width: 2rem;
+  width: 5vw;
 }
 
 @media (min-width: 64em) {
@@ -597,7 +597,7 @@ a, a:visited, a:hover {
 }
 
 .section2__text .text img {
-  width: 2rem;
+  width: 5vw;
 }
 
 @media (min-width: 64em) {
