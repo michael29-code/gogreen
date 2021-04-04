@@ -21,6 +21,7 @@
         }
         p{
             line-height: 1.5;
+            font-size: 3vw;
         }
        
         @include breakpoint-up(large){

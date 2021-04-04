@@ -28,12 +28,12 @@
         height: 50%;
         text-align: center;
         align-items: center;
-        font-size: small;
         @include breakpoint-up(large){
             order: 1;
         }
         .text{
             align-items: center;
+            font-size: 3vw;
             @include breakpoint-up(large){
                 font-size: 1.5vw;
             }

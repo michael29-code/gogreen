@@ -385,6 +385,7 @@ a, a:visited, a:hover {
 
 .hero__text p {
   line-height: 1.5;
+  font-size: 3vw;
 }
 
 @media (min-width: 64em) {
@@ -489,13 +490,13 @@ a, a:visited, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: small;
 }
 
 .section1__text .text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 3vw;
 }
 
 @media (min-width: 64em) {
@@ -572,7 +573,6 @@ a, a:visited, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: small;
 }
 
 @media (min-width: 64em) {
@@ -587,6 +587,7 @@ a, a:visited, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 3vw;
 }
 
 @media (min-width: 64em) {
@@ -851,7 +852,7 @@ footer {
 }
 
 footer .logo {
-  padding-top: 5vw;
+  padding-top: 2vw;
   width: 100%;
 }
 
@@ -869,11 +870,11 @@ footer .logo {
 }
 
 footer .logo img {
-  padding: 5px;
+  padding: 1vw;
 }
 
 footer .logo img:nth-child(1) {
-  min-width: 18vw;
+  min-width: 15vw;
 }
 
 @media (min-width: 64em) {
@@ -883,7 +884,7 @@ footer .logo img:nth-child(1) {
 }
 
 footer .logo img:nth-child(2) {
-  width: 30vw;
+  width: 25vw;
 }
 
 @media (min-width: 64em) {
@@ -893,7 +894,7 @@ footer .logo img:nth-child(2) {
 }
 
 footer .link {
-  padding: 10px;
+  padding: 1vw;
   margin: auto;
 }
 
@@ -910,11 +911,13 @@ footer .link {
 footer .link a {
   color: black;
   line-height: 8vw;
+  font-size: 4vw;
 }
 
 @media (min-width: 64em) {
   footer .link a {
     padding: 1vw;
+    font-size: 1.5vw;
     line-height: 1.5vw;
   }
 }
@@ -934,8 +937,9 @@ footer .social-media2 {
 }
 
 footer .social-media2 img {
-  width: 10vw;
+  width: 8vw;
   margin: 10px;
+  margin-top: 0;
 }
 
 @media (min-width: 64em) {
