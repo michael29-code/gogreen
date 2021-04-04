@@ -20,14 +20,18 @@
     padding-top: 0;
     align-items: center;
     &__image{
+        box-sizing: border-box;
         align-items: center;
         justify-content: center;
         padding-bottom: 1rem;
-        min-width: 50%;
-        image{
-            min-width: 60%;
+        width: 100%;
+        @include breakpoint-up(large){
+            width: 50%;
+        }
+        img{
+            width: 50%;
             @include breakpoint-up(large){
-                max-width: 70%;
+                width: 85%;
             }
         }
         @include breakpoint-up(large){
@@ -40,6 +44,9 @@
         height: 50%;
         text-align: center;
         align-items: center;
+        @include breakpoint-up(large){
+            width: 50%;
+        }
         .text{
             align-items: center;
             font-size: 3vw;
